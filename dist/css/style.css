@@ -53,4 +53,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+nav {
+  background-color: #282828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 20vw;
+  position: relative;
+}
+
+main {
+  background-color: #1F1F1F;
+}
+
+#timer {
+  background-color: #811919;
+  color: yellow;
+}
 /*# sourceMappingURL=style.css.map */
