@@ -21,6 +21,6 @@ nav {
   position: relative;
   padding-left: 30px;
 }
-rect:hover + text{
+svg:hover text{
   display: none;
 }

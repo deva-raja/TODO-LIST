@@ -39,8 +39,32 @@
   }
   .add:hover {
     transform: rotate(90deg) scale(1.2);
+    fill: white;
   }
   .right:hover {
     transform: scale(1.2);
+    fill: white;
   }
+}
+
+.clock{
+  fill: $logo-color;
+}
+.today-calendar{
+  fill: $today-calendar-color;
+}
+.upcoming-calendar{
+  fill: $upcoming-calendar-color;
+}
+.right{
+  fill: $teritary-color;
+}
+.add{
+  fill: $sort-color;
+}
+.sort{
+  fill: $teritary-color;
+}
+.task{
+  fill: $task-color;
 }

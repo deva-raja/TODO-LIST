@@ -135,11 +135,41 @@ table {
 #projects .add:hover {
   -webkit-transform: rotate(90deg) scale(1.2);
           transform: rotate(90deg) scale(1.2);
+  fill: white;
 }
 
 #projects .right:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  fill: white;
+}
+
+.clock {
+  fill: #3AC124;
+}
+
+.today-calendar {
+  fill: #20E0D5;
+}
+
+.upcoming-calendar {
+  fill: #8A0FD6;
+}
+
+.right {
+  fill: #678080;
+}
+
+.add {
+  fill: #727272;
+}
+
+.sort {
+  fill: #678080;
+}
+
+.task {
+  fill: #257ee5;
 }
 
 /*##############################
@@ -283,7 +313,7 @@ nav {
   padding-left: 30px;
 }
 
-rect:hover + text {
+svg:hover text {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
