@@ -21,3 +21,6 @@ nav {
   position: relative;
   padding-left: 30px;
 }
+rect:hover + text{
+  display: none;
+}

@@ -13,24 +13,6 @@
       <nav>
         <div id="logo-container">
           <h2>Todo App</h2>
-          <!-- <svg class="icon">
-            <use xlink:href="/images/right.svg#right-chevron" />
-          </svg>
-          <svg class="icon">
-            <use xlink:href="/images/add.svg#plus" />
-          </svg>
-          <svg class="icon">
-            <use xlink:href="/images/today_calendar.svg#calendar" />
-          </svg>
-          <svg class="icon">
-            <use xlink:href="/images/upcoming_calendar.svg#calendar" />
-          </svg>
-          <svg class="icon">
-            <use xlink:href="/images/sort.svg#descendant" />
-          </svg>
-          <svg class="icon">
-            <use xlink:href="/images/clock.svg#timer" />
-          </svg> -->
           <svg class="icon clock">
             <use xlink:href="/images/clock.svg#timer" />
           </svg>
@@ -55,7 +37,7 @@
               <use xlink:href="/images/right.svg#right-chevron" />
             </svg>
             <h3>Projects</h3>
-            <svg class="icon add">
+            <svg title="add" class="icon add">
               <use xlink:href="/images/add.svg#plus" />
             </svg>
           </div>
@@ -74,9 +56,11 @@
           <h6>Wed 13 Jan</h6>
         </div>
         <div id="task-container">
-          <svg class="icon">
+          <div id="task-icon-container"></div>
+          <svg class="icon task-icon">
             <use xlink:href="/images/task.svg#plus" />
           </svg>
+          <h3>add task</h3>
         </div>
       </div>
     </main>
