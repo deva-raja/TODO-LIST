@@ -2,6 +2,7 @@
 @import "logo-container";
 @import "reset";
 @import 'navigation-container';
+@import 'main-page-constants';
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,7 @@
 }
 main {
   background-color: $primary-color;
+  display: flex;
 }
 nav {
   background-color: $secondary-color;

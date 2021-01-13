@@ -1,13 +1,46 @@
-#navigation-container{
-    color: white;
-    font-size: 25px;
-    margin-top: 120px;
-    .icon{
-        width: 25px;
-        height: 25px;   
-    }
+#navigation-container {
+  color: white;
+  font-size: 25px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 20%;
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
 }
-#today-calendar-container{
-    display: flex;
-    
+#upcoming-calendar-container,
+#projects,
+#today-calendar-container {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#upcoming-calendar-container {
+  width: 52%;
+}
+
+#projects {
+  width: 90%;
+  h3 {
+    position: relative;
+    right: 58px;
+  }
+  .add {
+    position: relative;
+    right: 88px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s ease-in;
+  }
+  .add:hover {
+    transform: rotate(90deg) scale(1.2);
+  }
+  .right:hover {
+    transform: scale(1.2);
+  }
 }

@@ -1,0 +1,15 @@
+#main-content-container {
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+}
+#sort-container {
+  color: $sort-color;
+}
+#task-container {
+  color: $task-color;
+}
+#current-date-container {
+  h6 {
+    color: $teritary-color;
+  }
+}
