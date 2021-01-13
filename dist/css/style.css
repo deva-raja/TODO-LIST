@@ -1,3 +1,24 @@
+#logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+#logo-container h2 {
+  color: #3AC124;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.clock {
+  width: 40px;
+  height: 40px;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -20,8 +41,6 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   vertical-align: baseline;
 }
 
@@ -54,6 +73,16 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background-color: #1F1F1F;
+}
+
 nav {
   background-color: #282828;
   display: -webkit-box;
@@ -66,14 +95,6 @@ nav {
   height: 100vh;
   width: 20vw;
   position: relative;
-}
-
-main {
-  background-color: #1F1F1F;
-}
-
-#timer {
-  background-color: #811919;
-  color: yellow;
+  padding-left: 30px;
 }
 /*# sourceMappingURL=style.css.map */
