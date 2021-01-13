@@ -6,7 +6,7 @@
     <title>todo-list</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
   </head>
   <body>
     <main>
@@ -34,6 +34,31 @@
           <svg class="icon clock">
             <use xlink:href="/images/clock.svg#timer" />
           </svg>
+        </div>
+
+        <!-- calendar -->
+        <div id="navigation-container">
+          <div id="today-calendar-container">
+            <svg class="icon today-calendar">
+              <use xlink:href="/images/today_calendar.svg#calendar" />
+            </svg>
+            <h3>Today</h3>
+          </div>
+          <div id="upcoming-calendar-container">
+            <svg class="icon upcoming-calendar">
+              <use xlink:href="/images/upcoming_calendar.svg#calendar" />
+            </svg>
+            <h3>Upcoming</h3>
+          </div>
+          <div id="projects">
+            <svg class="icon right">
+              <use xlink:href="/images/right.svg#right-chevron" />
+            </svg>
+            <h3>Projects</h3>
+            <svg class="icon add">
+              <use xlink:href="/images/add.svg#plus" />
+            </svg>
+          </div>
         </div>
       </nav>
     </main>
