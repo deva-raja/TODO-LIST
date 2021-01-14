@@ -9,7 +9,7 @@
 }
 
 #logo-container h2 {
-  color: #3AC124;
+  color: #3ac124;
   font-weight: bold;
   font-size: 42px;
 }
@@ -144,34 +144,6 @@ table {
   fill: white;
 }
 
-.clock {
-  fill: #3AC124;
-}
-
-.today-calendar {
-  fill: #20E0D5;
-}
-
-.upcoming-calendar {
-  fill: #8A0FD6;
-}
-
-.right {
-  fill: #678080;
-}
-
-.add {
-  fill: #727272;
-}
-
-.sort {
-  fill: #678080;
-}
-
-.task {
-  fill: #257ee5;
-}
-
 /*##############################
 Contents
 1.sort container
@@ -213,6 +185,10 @@ Contents
   height: 35px;
 }
 
+#sort-container:hover {
+  cursor: default;
+}
+
 #sort-container:hover .icon {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -238,7 +214,7 @@ Contents
 }
 
 #current-date-container h6 {
-  color: #678080;
+  color: #3f6b68;
   font-size: 20px;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -258,6 +234,10 @@ Contents
   color: #257ee5;
   bottom: -20vh;
   left: 100px;
+}
+
+#task-container:hover {
+  cursor: pointer;
 }
 
 #task-container:hover .icon {
@@ -285,6 +265,28 @@ Contents
   transition: opacity 0.5s ease-in-out;
 }
 
+.clock {
+  fill: #3ac124;
+}
+
+.today-calendar {
+  fill: #20e0d5;
+}
+
+.upcoming-calendar {
+  fill: #8a0fd6;
+}
+
+.right,
+.add,
+.sort {
+  fill: #727272;
+}
+
+.task {
+  fill: #257ee5;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -292,7 +294,7 @@ Contents
 }
 
 main {
-  background-color: #1F1F1F;
+  background-color: #1f1f1f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

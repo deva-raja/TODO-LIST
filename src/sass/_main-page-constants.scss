@@ -36,6 +36,7 @@ Contents
 }
 
 #sort-container:hover {
+  cursor: default;
   .icon {
     transform: scale(1.1);
   }
@@ -64,6 +65,7 @@ Contents
 }
 
 #task-container:hover {
+  cursor: pointer;
   .icon {
     transform: scale(1.1);
   }
