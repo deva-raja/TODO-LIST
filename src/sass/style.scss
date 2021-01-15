@@ -1,11 +1,13 @@
 @import "variables";
 @import "logo-container";
 @import "reset";
-@import 'navigation-container';
-@import 'main-page-constants';
-@import 'svg-colors';
+@import "navigation-container";
+@import "main-page-constants";
+@import "svg-colors";
+@import "todo-container";
 
 // vinudevaraj007@gmail.com
+
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -23,6 +25,6 @@ nav {
   position: relative;
   padding-left: 30px;
 }
-svg:hover text{
+svg:hover text {
   display: none;
 }
