@@ -1,5 +1,7 @@
 #todo-container {
   @include flexboxForm();
+  width: 100%;
+  align-items: flex-start;
 }
 
 .todo {

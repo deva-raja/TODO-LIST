@@ -38,7 +38,7 @@ function domAddTodo(item, parentContainer) {
 }
 
 function poppulateDisplay(items = [], displayArea) {
-  displayArea.textContent='';
+  displayArea.textContent = "";
   items.forEach((item) => {
     return domAddTodo(item, displayArea);
   });

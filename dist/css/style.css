@@ -271,6 +271,7 @@ Contents
   width: 100%;
   height: 100%;
   position: relative;
+  left: 10px;
 }
 
 #task-container:hover {
@@ -320,6 +321,10 @@ Contents
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .todo {
