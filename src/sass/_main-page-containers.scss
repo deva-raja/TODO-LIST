@@ -59,9 +59,16 @@ Contents
 #task-container {
   width: 200px;
   @include flexbox(relative);
+  flex-direction: column;
   color: $task-color;
   bottom: -20vh;
   left: 100px;
+}
+
+#add-task-container {
+  @include flexbox(inherit);
+  width: 100%;
+  height: 100%;
 }
 
 #task-container:hover {
@@ -74,12 +81,17 @@ Contents
     transition: opacity 0.5s ease-in-out;
   }
 }
-#task-icon-container {
+@mixin circle($area,$pad) {
   border-radius: 50%;
   border: 3px solid $task-color;
   padding: 3px;
-  width: 40px;
-  height: 40px;
+  width: $area;
+  height: $area;
+  padding: $pad;
+}
+
+#task-icon-container {
+  @include circle(40px,10px);
   opacity: 0;
   position: absolute;
   left: -0.2px;

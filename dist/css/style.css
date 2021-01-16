@@ -231,9 +231,27 @@ Contents
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #257ee5;
   bottom: -20vh;
   left: 100px;
+}
+
+#add-task-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 #task-container:hover {
@@ -257,6 +275,7 @@ Contents
   padding: 3px;
   width: 40px;
   height: 40px;
+  padding: 10px;
   opacity: 0;
   position: absolute;
   left: -0.2px;
@@ -285,6 +304,63 @@ Contents
 
 .task {
   fill: #257ee5;
+}
+
+.task_checkbox .task_checkbox__circle {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+}
+
+.task_checkbox,
+.task_checkbox .task_checkbox__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.normal {
+  height: 0;
+  -webkit-transition-duration: 280ms;
+          transition-duration: 280ms;
+  display: none;
+}
+
+.drop {
+  height: 200px;
+  -webkit-transition-duration: 280ms;
+          transition-duration: 280ms;
+  display: inline-block;
+}
+
+#add-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150px;
+  height: 200px;
+  background-color: #282828;
+  border: 1px solid #0bb351;
+  padding: 20px;
+  margin: auto auto;
+  top: 50%;
+  left: 50%;
 }
 
 * {

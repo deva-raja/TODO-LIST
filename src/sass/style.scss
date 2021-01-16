@@ -1,30 +1,36 @@
 @import "variables";
-@import "logo-container";
 @import "reset";
-@import "navigation-container";
-@import "main-page-constants";
-@import "svg-colors";
+@import "navbar";
+@import "main-page-containers";
 @import "todo-container";
-
-// vinudevaraj007@gmail.com
+@import "main-page-forms";
 
 * {
-  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 main {
   background-color: $primary-color;
   display: flex;
 }
-nav {
-  background-color: $secondary-color;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 20vw;
-  position: relative;
-  padding-left: 30px;
-}
 svg:hover text {
   display: none;
+}
+
+// svg-colors
+.clock {
+  fill: $logo-color;
+}
+.today-calendar {
+  fill: $today-calendar-color;
+}
+.upcoming-calendar {
+  fill: $upcoming-calendar-color;
+}
+.right,
+.add,
+.sort {
+  fill: $sort-color;
+}
+.task {
+  fill: $task-color;
 }

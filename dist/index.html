@@ -55,14 +55,30 @@
           <h3>Today</h3>
           <h6>Wed 13 Jan</h6>
         </div>
+
+        <!-- todo section -->
+
         <div id="task-container">
-          <div id="task-icon-container"></div>
-          <svg class="icon task">
-            <use xlink:href="/images/myicon.svg#plus" />
-          </svg>
-          <h3>add task</h3>
+          <div id="todo">
+            <ul id="todo-container"></ul>
+          </div>
+          <div id="add-task-container">
+            <div id="task-icon-container"></div>
+            <svg class="icon task">
+              <use xlink:href="/images/myicon.svg#plus" />
+            </svg>
+            <h3>add task</h3>
+          </div>
         </div>
       </div>
+
+
+      <!-- forms -->
+      <form id="add-form">
+        <input type="text" required />
+        <input type="submit" value="add item" />
+      </form>
+
     </main>
     <script src="/src/index.mjs"></script>
   </body>

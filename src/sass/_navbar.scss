@@ -1,3 +1,32 @@
+// navbar
+nav {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 20vw;
+  position: relative;
+  padding-left: 30px;
+}
+
+// Main TODO logo
+#logo-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+#logo-container h2 {
+  color: $logo-color;
+  font-weight: bold;
+  font-size: 42px;
+}
+.clock {
+  width: 40px;
+  height: 40px;
+}
+
+// nav-container
 #navigation-container {
   color: white;
   font-size: 25px;

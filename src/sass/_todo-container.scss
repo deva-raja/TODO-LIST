@@ -1,4 +1,5 @@
 // cirle css for the todo
+// stealing
 
 .task_checkbox .task_checkbox__circle {
   height: 16px;
@@ -18,6 +19,7 @@
 }
 
 // project drop down
+// stealing
 .normal {
   height: 0;
   transition-duration: 280ms;
@@ -27,4 +29,14 @@
   height: 200px;
   transition-duration: 280ms;
   display: inline-block;
+}
+
+// Actual css
+.todo {
+  @include flexbox(column,relative);
+}
+
+.check {
+  @include circle(30px, 4px);
+  opacity: 1;
 }
