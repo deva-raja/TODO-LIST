@@ -1,7 +1,13 @@
+#todo-container {
+  @include flexboxForm();
+}
+
 .todo {
   @include flexbox();
+  margin: 15px 0;
 }
 
 .check {
   @include circle(30px, 4px);
+  margin:0 13px;
 }
