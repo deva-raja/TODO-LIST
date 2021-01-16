@@ -1,0 +1,15 @@
+@mixin flexbox($position: initial, $dir: row) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: $position;
+  flex-direction: $dir;
+}
+
+@mixin circle($area, $pad) {
+  border-radius: 50%;
+  border: 3px solid $task-color;
+  width: $area;
+  height: $area;
+  padding: $pad;
+}
