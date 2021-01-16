@@ -4,16 +4,15 @@
 @import "main-page-containers";
 @import "todo-container";
 @import "main-page-forms";
+@import "mixins";
 
 * {
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 main {
   background-color: $primary-color;
   display: flex;
-}
-svg:hover text {
-  display: none;
 }
 
 // svg-colors

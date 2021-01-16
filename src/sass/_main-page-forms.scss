@@ -1,11 +1,11 @@
-@mixin flexbox($flex-direction: column,$pos:relative) {
+@mixin flexboxForm($flex-direction: column, $pos: relative) {
   display: flex;
   justify-content: space-around;
   position: $pos;
   flex-direction: $flex-direction;
 }
 #add-form {
-  @include flexbox(column,absolute);
+  @include flexboxForm(column, absolute);
   width: 150px;
   height: 200px;
   background-color: $secondary-color;

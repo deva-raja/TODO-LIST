@@ -1,3 +1,4 @@
+@import 'mixins';
 /*##############################
 Contents
 1.sort container
@@ -16,12 +17,7 @@ Contents
     height: 25px;
   }
 }
-@mixin flexbox($position: initial) {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: $position;
-}
+
 #sort-container {
   @include flexbox(relative);
   color: $sort-color;
