@@ -3,7 +3,7 @@
 
 let addTaskBtn = document.querySelector("#add-task-container");
 let addTaskForm = document.querySelector("#add-form");
-let display = document.querySelector("#todo-container");
+let parentContainer = document.querySelector("#todo-container");
 let todos = [];
 
 addTaskBtn.addEventListener("click", showAddForm);
@@ -21,11 +21,11 @@ function getTodo(e) {
     done: false,
   };
   todos.push(todo);
-  poppulateDisplay(todos, display);
+  poppulateDisplay(todos, parentContainer);
   this.reset();
 }
 
-function domAddTodo(item) {
+function domAddTodo(item, parentContainer) {
   const li = document.createElement("li");
   li.classList.add("todo");
   const div = document.createElement("div");
@@ -34,11 +34,12 @@ function domAddTodo(item) {
   para.textContent = `${item.text}`;
   li.appendChild(div);
   li.appendChild(para);
-  return display.appendChild(li);
+  return parentContainer.appendChild(li);
 }
 
-function poppulateDisplay(items, displayArea) {
-  items.map((item) => {
-    return domAddTodo(item);
+function poppulateDisplay(items = [], displayArea) {
+  displayArea.textContent='';
+  items.forEach((item) => {
+    return domAddTodo(item, displayArea);
   });
 }
