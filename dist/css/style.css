@@ -314,6 +314,7 @@ Contents
 .check {
   border-radius: 50%;
   border: 3px solid #257ee5;
+  padding: 3px;
   width: 30px;
   height: 30px;
   padding: 4px;
@@ -325,11 +326,17 @@ Contents
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
   width: 150px;
   height: 200px;
   background-color: #282828;

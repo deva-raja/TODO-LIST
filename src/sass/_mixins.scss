@@ -11,3 +11,8 @@
   align-items: center;
   position: $position;
 }
+@mixin flexboxForm($flex-direction: column, $pos: relative) {
+  @include flexbox($pos);
+  flex-direction: $flex-direction;
+  align-items: initial;
+}
