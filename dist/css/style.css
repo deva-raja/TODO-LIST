@@ -351,8 +351,17 @@ Contents
   position: relative;
 }
 
+.done {
+  border: 1px solid #0bdc85;
+  text-decoration: line-through;
+}
+
+.done .checkSvg {
+  opacity: 1;
+}
+
 .todo:hover {
-  border: 1px solid aliceblue;
+  background-color: #242a2c;
 }
 
 .todo:hover .deleteSvg {
@@ -365,14 +374,22 @@ Contents
   width: 30px;
   height: 30px;
   padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: initial;
   margin: 0 13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.circle:hover {
-  margin: 1px solid green;
-}
-
-.circle:hover .check {
+.circle:hover .checkSvg {
   opacity: 1;
 }
 
@@ -380,8 +397,8 @@ Contents
   width: 10px;
   height: 10px;
   opacity: 0;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .deleteSvg {

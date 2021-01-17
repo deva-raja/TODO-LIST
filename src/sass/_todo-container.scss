@@ -17,28 +17,38 @@
   margin: 5px 0;
   position: relative;
 }
+
+.done {
+  border: 1px solid #0bdc85;
+  text-decoration: line-through;
+  .checkSvg {
+    opacity: 1;
+  }
+}
+
 .todo:hover {
-  border: 1px solid aliceblue;
-  .deleteSvg{
+  background-color: #242a2c;
+  .deleteSvg {
     opacity: 1;
   }
 }
 
 .circle {
   @include circle(30px, 2px, $sort-color);
+  @include flexbox();
   margin: 0 13px;
+  justify-content: center;
 }
 .circle:hover {
-  margin: 1px solid green;
-  .check {
+  .checkSvg {
     opacity: 1;
   }
 }
 .checkSvg {
   @include area(10px, 10px);
   opacity: 0;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 .deleteSvg {
   position: absolute;
