@@ -29,7 +29,11 @@ function domAddTodo(item, parentContainer) {
   const li = document.createElement("li");
   li.classList.add("todo");
   const div = document.createElement("div");
-  div.classList.add("check");
+  div.classList.add("circle");
+  const innerImg = document.createElement("IMG");
+  innerImg.classList.add("check");
+  innerImg.src = "/images/check.svg";
+  div.appendChild(innerImg);
   const para = document.createElement("p");
   para.textContent = `${item.text}`;
   li.appendChild(div);

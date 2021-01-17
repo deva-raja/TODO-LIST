@@ -67,9 +67,10 @@ Contents
   height: 100%;
   position: relative;
   left: 10px;
+  top: 10px;
 }
 
-#task-container:hover {
+#add-task-container:hover {
   cursor: pointer;
   .icon {
     transform: scale(1.1);
@@ -79,17 +80,9 @@ Contents
     transition: opacity 0.5s ease-in-out;
   }
 }
-@mixin circle($area, $pad) {
-  border-radius: 50%;
-  border: 3px solid $task-color;
-  padding: 3px;
-  width: $area;
-  height: $area;
-  padding: $pad;
-}
 
 #task-icon-container {
-  @include circle(40px, 10px);
+  @include circle(40px, 10px, $task-color);
   opacity: 0;
   position: absolute;
   left: -0.2px;

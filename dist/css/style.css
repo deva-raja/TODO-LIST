@@ -272,18 +272,19 @@ Contents
   height: 100%;
   position: relative;
   left: 10px;
+  top: 10px;
 }
 
-#task-container:hover {
+#add-task-container:hover {
   cursor: pointer;
 }
 
-#task-container:hover .icon {
+#add-task-container:hover .icon {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-#task-container:hover #task-icon-container {
+#add-task-container:hover #task-icon-container {
   opacity: 1;
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
@@ -292,7 +293,6 @@ Contents
 #task-icon-container {
   border-radius: 50%;
   border: 3px solid #257ee5;
-  padding: 3px;
   width: 40px;
   height: 40px;
   padding: 10px;
@@ -321,7 +321,7 @@ Contents
   -webkit-box-align: initial;
       -ms-flex-align: initial;
           align-items: initial;
-  width: 100%;
+  width: 67vw;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -337,17 +337,39 @@ Contents
       -ms-flex-align: center;
           align-items: center;
   position: initial;
+  font-size: 25px;
   margin: 15px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 3px solid #727272;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  margin: 0 13px;
+}
+
+.circle:hover {
+  margin: 1px solid green;
+}
+
+.circle:hover .check {
+  opacity: 1;
 }
 
 .check {
-  border-radius: 50%;
-  border: 3px solid #257ee5;
-  padding: 3px;
-  width: 30px;
-  height: 30px;
-  padding: 4px;
-  margin: 0 13px;
+  width: 10px;
+  height: 10px;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
 }
 
 #add-form {
@@ -374,7 +396,7 @@ Contents
   padding: 20px;
   margin: auto auto;
   top: 50%;
-  left: 50%;
+  left: 5%;
 }
 
 * {

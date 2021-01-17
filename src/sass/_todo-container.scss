@@ -1,15 +1,33 @@
 #todo-container {
   @include flexboxForm();
-  width: 100%;
+  width: 67vw;
   align-items: flex-start;
 }
 
 .todo {
   @include flexbox();
+  font-size: 25px;
   margin: 15px 0;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+.circle {
+  @include circle(30px, 2px, $sort-color);
+  margin: 0 13px;
+}
+.circle:hover {
+  margin: 1px solid green;
+  .check {
+    opacity: 1;
+  }
 }
 
 .check {
-  @include circle(30px, 4px);
-  margin:0 13px;
+  @include area(10px, 10px);
+  opacity: 0;
+  width: 20px;
+  height: 20px;
 }
