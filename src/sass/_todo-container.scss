@@ -7,11 +7,21 @@
 .todo {
   @include flexbox();
   font-size: 25px;
-  margin: 15px 0;
   justify-content: flex-start;
   width: 100%;
   overflow-wrap: break-word;
   color: white;
+  border: 0px solid aliceblue;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 5px 0;
+  position: relative;
+}
+.todo:hover {
+  border: 1px solid aliceblue;
+  .deleteSvg{
+    opacity: 1;
+  }
 }
 
 .circle {
@@ -24,10 +34,17 @@
     opacity: 1;
   }
 }
-
-.check {
+.checkSvg {
   @include area(10px, 10px);
   opacity: 0;
   width: 20px;
   height: 20px;
+}
+.deleteSvg {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  width: 25px;
+  height: 22px;
+  opacity: 0;
 }

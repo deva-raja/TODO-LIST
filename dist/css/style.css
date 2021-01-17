@@ -338,13 +338,25 @@ Contents
           align-items: center;
   position: initial;
   font-size: 25px;
-  margin: 15px 0;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
   overflow-wrap: break-word;
   color: white;
+  border: 0px solid aliceblue;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 5px 0;
+  position: relative;
+}
+
+.todo:hover {
+  border: 1px solid aliceblue;
+}
+
+.todo:hover .deleteSvg {
+  opacity: 1;
 }
 
 .circle {
@@ -364,12 +376,21 @@ Contents
   opacity: 1;
 }
 
-.check {
+.checkSvg {
   width: 10px;
   height: 10px;
   opacity: 0;
   width: 20px;
   height: 20px;
+}
+
+.deleteSvg {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  width: 25px;
+  height: 22px;
+  opacity: 0;
 }
 
 #add-form {
@@ -396,6 +417,17 @@ Contents
   padding: 20px;
   margin: auto auto;
   top: 50%;
+  left: 5%;
+}
+
+.deleteAll {
+  position: absolute;
+  background-color: #282828;
+  color: #079499;
+  border: 1px solid #c00000;
+  padding: 20px;
+  margin: auto auto;
+  top: 80%;
   left: 5%;
 }
 
