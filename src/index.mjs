@@ -1,5 +1,6 @@
 // import { endOfToday } from "date-fns";
 // const today = new Date();
+console.log('test');
 
 const addTaskBtn = document.querySelector("#add-task-container");
 const addTaskForm = document.querySelector("#add-form");
